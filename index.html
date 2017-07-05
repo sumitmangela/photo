@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <title> DeVoe Photography</title>
      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
      <script type="text/javascript" src="dist/slick.js"></script>
      <script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+    <script type="text/javascript" src="dist/smoothScroll.js"></script> 
+    <script type="text/javascript" src="dist/jquery.scrollify.js"></script>
   
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
@@ -23,9 +26,9 @@
     
     </head>
     
-<body >  
-    <header class="tm-head">
-        <div class="tm-header">
+<body > 
+    <header id="home" class="tm-head ">
+        <div class="tm-header scroll">
             <div class="tm-s">
         <img class="tm-logo" src="images/devoe_photography.png" alt="DeVoe Photography">
                 <div class="tm-m"><a href="#"> <img class="tm-media" src="images/fp.png" ></a>
@@ -36,9 +39,9 @@
         <nav class="tm-nav" >
        <div>
             <ul>
-                <li class="tm-list"><a href="home.html"><div id="line"></div>Home</a></li>
-                <li class="tm-list"><a href="home.html"><div id="line"></div>Albums </a></li>
-                <li class="tm-list"><a href="home.html"><div id="line"></div>Contact Us</a></li>
+                <li class="tm-list"><a href="#home"><div id="line"></div>Home</a></li>
+                <li class="tm-list"><a href="#album"><div id="line"></div>Albums </a></li>
+                <li class="tm-list"><a href="#contact"><div id="line"></div>Contact Us</a></li>
             
             </ul>    
             </div>
@@ -61,7 +64,7 @@
         
     </header>
     
-    <section class="tm-album">
+    <section id="album" class="tm-album scroll">
     <div class="slider album">
       <div class="tm-albumimg">  <img  src="images/young_lady.png"> <p>Young Lady</p></div>
          <div class="tm-albumimg">  <img  src="images/sunkissed.png"> <p>Sun Kissed</p> </div>
@@ -102,10 +105,10 @@
     
 
     </section>
-    
-    <section class="tm-contact">
+  
+    <section  id="contact"  class="tm-contact scroll">
       <img class="bg" src="images/contact_bg.png">
-       
+        
     <form>
         <p>Contact Us</p>
     
@@ -120,10 +123,11 @@
         
         </form>
      <p id="touch">It is very easy to get in touch with us</p>
-       <div class="tm-m3"><a href="#"> <img class="tm-media2" src="images/fp.png" ></a>
+       <div   class="tm-m3"><a href="#"> <img class="tm-media2" src="images/fp.png" ></a>
                     <a href="#">  <img class="tm-media2" src="images/G+.png" ></a>
                     <a href="#">  <img class="tm-media2" src="images/Insta.png" ></a></div>
+  
     </section>
-    
+   
     </body>
 </html>

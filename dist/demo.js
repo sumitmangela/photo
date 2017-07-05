@@ -94,3 +94,27 @@ $(document).ready(function(){
     activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
   });
 });
+
+
+
+
+//smoothScroll
+ $(function () {
+$('a').smoothScroll({
+duration: 1000, // animation speed
+easing: 'swing', // find more easing options on http://api.jqueryui.com/easings/
+offset: 0 // custom offset
+});
+});
+
+
+
+//scrollify
+ $(function() {
+          $.scrollify({
+              section : ".scroll",
+           
+          });
+     
+    
+        });
